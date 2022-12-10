@@ -73,7 +73,7 @@ fn main() {
     for l in buf.lines() {
         let line = l.expect("Expected to read line");
 
-        if line == "" {
+        if line.is_empty() {
             pos += 1;
             continue;
         }
